@@ -1,10 +1,16 @@
+@import "variables";
 @import "mixins";
 
 .wrapper {
   width: 100%;
+  &:first-child{
+   background-color: $color-primary;
+  }
 }
 .container {
   width: 100%;
+  margin-inline: auto;
+  
   @include tablet {
     max-width: 90rem;
   }
@@ -13,6 +19,9 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr;
+  color: white;
+
+
   @include tablet {
     grid-template-columns: 1fr 1fr;
   }

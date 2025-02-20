@@ -2,5 +2,12 @@
 
 .hero{
  height: 100dvh;
- background-color: $color-primary;
+
+ & h1{
+  font-family: mulish, sans-serif;
+  font-style: 600;
+  font-size: 6rem;
+  letter-spacing: -3%;
+  text-wrap: balance;
+ }
 }
