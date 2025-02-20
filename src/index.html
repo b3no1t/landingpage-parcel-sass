@@ -1,18 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>CHapp, your chat app</title>
     <link rel="stylesheet" href="./assets/css/styles.scss" />
     <script type="module" src="app.js"></script>
   </head>
   <body>
-   <div class="wrapper">
-
-     <div class="hero">
-      
-     </div>
-
-   </div>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <div class="logo">Ch<span>app</span></div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#" class="menu__link">Services</a></li>
+              <li><a href="#" class="menu__link">Product</a></li>
+              <li><a href="#" class="menu__link">Contact</a></li>
+              <li><a href="#" class="menu__link">Log in</a></li>
+              <li><a href="#" class="menu__link menu__rounded">Try it Free</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero">
+          <div></div>
+          <div>
+            <picture>
+              <source srcset="./assets/img/hero-img.png?as=avif&width=800" type="image/avif" />
+              <source srcset="./assets/img/hero-img.png?as=webp&width=800" type="image/webp" />
+              <source srcset="./assets/img/hero-img.png?width=800" type="image/png" />
+              <img src="./assets/img/hero-img.png?width=200" alt="test image" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <section></section>
+    </div>
   </body>
 </html>
