@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+.hero{
+ height: 100dvh;
+ background-color: $color-primary;
+}
