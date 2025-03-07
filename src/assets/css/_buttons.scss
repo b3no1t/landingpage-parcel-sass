@@ -1,0 +1,32 @@
+/// Buttons
+/// -----
+
+// variables
+@use "variables" as *;
+@use "placeholders" as *;
+
+.group-button{
+ @extend %flex-row-start;
+ gap: 1em;
+
+}
+
+.button {
+ display: inline-block;
+ background-color: $color-primary;
+ color: white;
+ padding: 1em 2em;
+ border-radius: 80px;
+ text-decoration: none;
+
+ &__primary{
+   background-color: $color-primary;
+   border: 1px solid white;
+ }
+ &__secondary{
+  background-color: $color-secondary;
+  border: 1px solid $color-secondary;
+
+ }
+
+}

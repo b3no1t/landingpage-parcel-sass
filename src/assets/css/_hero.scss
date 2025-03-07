@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .hero{
- height: 100dvh;
+ height: calc( 100% - 80px);
 
  & h1{
   font-family: mulish, sans-serif;
@@ -10,4 +10,10 @@
   letter-spacing: -3%;
   text-wrap: balance;
  }
+
+ &__content > * + *{
+   margin-top: 2em;
+ }
+
+
 }

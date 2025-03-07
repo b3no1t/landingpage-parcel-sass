@@ -1,5 +1,6 @@
-@import "variables";
-@import "mixins";
+@use "variables" as *;
+@use "mixins" as *;
+
 
 .wrapper {
   width: 100%;
@@ -14,12 +15,16 @@
   @include tablet {
     max-width: 90rem;
   }
+  &:has(.hero){
+    height: 100svh;
+  }
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr;
   color: white;
+  place-items: center;
 
 
   @include tablet {
